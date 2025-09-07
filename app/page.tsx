@@ -217,12 +217,10 @@ export default function HomePreview() {
                   )}
                 </div>
               )}
-              <a
-                href="#menu"
-                className="inline-flex items-center rounded-full bg-amber-900 px-4 py-2 text-sm font-semibold text-amber-50 shadow hover:bg-amber-800"
+              {/* <a href="#menu" className="inline-flex items-center rounded-full bg-amber-900 px-4 py-2 text-sm font-semibold text-amber-50 shadow hover:bg-amber-800"
               >
                 Order Now
-              </a>
+              </a> */}
               <a
                 href="/cart"
                 className="inline-flex items-center rounded-full bg-amber-900 px-4 py-2 text-sm font-semibold text-amber-50 shadow hover:bg-amber-800"
@@ -349,19 +347,29 @@ export default function HomePreview() {
       </section>
 
       <section id="offers" className="py-14">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl bg-gradient-to-r from-amber-900 to-amber-700 p-8 text-amber-50 flex items-center justify-between gap-6">
-            <div>
-              <h3 className="text-2xl font-bold">Long Lost Biryanis — starting at ₹269</h3>
-              <p className="text-amber-100">Limited-time specials. No coupon required.</p>
-            </div>
-            <img src="/images/offer-banner.jpg" alt="Offers" className="h-28 w-40 object-cover rounded-xl hidden sm:block" />
-            <a href="/menu" className="inline-flex items-center rounded-full bg-white px-6 py-3 text-amber-900 font-semibold hover:bg-amber-50">
-              Grab the Offer
-            </a>
-          </div>
-        </div>
-      </section>
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="rounded-3xl bg-gradient-to-r from-amber-900 to-amber-700 p-8 text-amber-50
+                    flex flex-col items-start gap-4
+                    sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+      <div>
+        <h3 className="text-2xl font-bold">Long Lost Biryanis — starting at ₹269</h3>
+        <p className="text-amber-100">Limited-time specials. No coupon required.</p>
+      </div>
+      <img
+        src="/images/offer-banner.jpg"
+        alt="Offers"
+        className="h-28 w-40 object-cover rounded-xl hidden sm:block"
+      />
+      <a
+        href="/offers"
+        className="inline-flex items-center rounded-full bg-white px-6 py-3 text-amber-900 font-semibold hover:bg-amber-50 self-start sm:self-auto"
+      >
+        Grab the Offer
+      </a>
+    </div>
+  </div>
+</section>
+
 
       <section id="story" className="py-16 bg-neutral-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
