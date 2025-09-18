@@ -363,7 +363,7 @@ export default function HomePreview() {
                         />
 
                         <a
-                            href="/offer"
+                            href="/offers"
                             className="inline-flex items-center rounded-full bg-white px-6 py-3 text-amber-900 font-semibold hover:bg-amber-50 self-start sm:self-auto"
                         >
                             Grab the Offer
